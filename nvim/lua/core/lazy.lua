@@ -16,7 +16,7 @@ vim.g.mapleader = " "
 local opts = {
   install = {
     -- try to load one of these colorschemes when starting an installation during startup
-    colorscheme = { "tokyonight-storm" },
+    -- colorscheme = { "tokyonight-storm" },
   },
 }
 require("lazy").setup("plugins", opts)

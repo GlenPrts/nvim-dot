@@ -1,6 +1,7 @@
 return {
     "neovim/nvim-lspconfig",
     cmd = { "Mason", "Neoconf" },
+    cond = not(vim.g.vscode),
     event = { "BufReadPost", "BufNewFile" },
     dependencies = {
         "williamboman/mason.nvim",

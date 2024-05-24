@@ -1,6 +1,7 @@
 return {
     {
       "folke/tokyonight.nvim",
+      cond = not(vim.g.vscode),
       dependencies = {
         "nvim-tree/nvim-web-devicons",
         "nvim-lualine/lualine.nvim",

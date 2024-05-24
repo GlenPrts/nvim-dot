@@ -1,12 +1,14 @@
 return {
     {
         "rhysd/accelerated-jk",
+        vscode = true,
         keys = {
             { "j", "<Plug>(accelerated_jk_gj)" },
             { "k", "<Plug>(accelerated_jk_gk)" },
         },
     },
     {   'akinsho/toggleterm.nvim',
+        cond = not(vim.g.vscode),
         keys = {
             {
                 "<A-\\>", "<cmd>ToggleTerm direction=vertical<CR>",
@@ -66,6 +68,7 @@ return {
     },
     {
         "folke/persistence.nvim",
+        cond = not(vim.g.vscode),
         keys = {
             { "<leader>qs", [[<cmd>lua require("persistence").load()<cr>]] },
             { "<leader>ql", [[<cmd>lua require("persistence").load({ last = true})<cr>]] },
@@ -75,6 +78,7 @@ return {
     },
     {
         'windwp/nvim-autopairs',
+        cond = not(vim.g.vscode),
         event = "VeryLazy",
         opts = {
             enable_check_bracket_line = false,
@@ -82,11 +86,13 @@ return {
     },
     {
         "folke/which-key.nvim",
+        cond = not(vim.g.vscode),
         event = "VeryLazy",
         config = true,
     },
     {
         "kamykn/spelunker.vim",
+        cond = not(vim.g.vscode),
         event = "VeryLazy",
         config = function()
             vim.g.spelunker_check_type = 2
@@ -94,11 +100,13 @@ return {
     },
     {
         "ellisonleao/glow.nvim",
+        cond = not(vim.g.vscode),
         event = "VeryLazy",
         config = true,
     },
     {
         "nvim-neo-tree/neo-tree.nvim",
+        cond = not(vim.g.vscode),
         dependencies = {
             "nvim-lua/plenary.nvim",
             "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
@@ -111,16 +119,19 @@ return {
     },
     {
         'echasnovski/mini.ai',
+        cond = not(vim.g.vscode),
         event = "VeryLazy",
         config = true,
     },
     {
        "echasnovski/mini.comment",
+       cond = not(vim.g.vscode),
         event = "VeryLazy",
         config = true,
     },
     {
         "folke/flash.nvim",
+        vscode = true,
         keys = {
             {
                 "s",
@@ -167,6 +178,7 @@ return {
     },
     {
         "s1n7ax/nvim-window-picker",
+        cond = not(vim.g.vscode),
         opts = {
             filter_rules = {
                 include_current_win = true,

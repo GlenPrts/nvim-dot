@@ -22,7 +22,7 @@ keymap.set("n", "<leader>wc", "<C-w>c")
 -- 取消高亮
 keymap.set("n", "<leader>nh", ":nohl<CR>") --即重新载入文件
 -- 缓冲文件切换
-keymap.set("n", "]b", "<cmd>bNext<CR>")
+keymap.set("n", "]b", "<cmd>bnext<CR>")
 keymap.set("n", "[b", "<cmd>bN<CR>")
 keymap.set("n", "<leader>bc", "<cmd>bd<CR>")  --关闭缓冲文件
 -- 快速保存

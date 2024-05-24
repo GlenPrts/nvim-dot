@@ -1,21 +1,26 @@
 return {
     {
         "akinsho/bufferline.nvim",
+        cond = not(vim.g.vscode),
         event = "VeryLazy",
         config = true,
     },
     {
         "lukas-reineke/indent-blankline.nvim",
+        cond = not(vim.g.vscode),
         event = "VeryLazy",
         config = true,
+        main = "ibl",
     },
     {
         "lewis6991/gitsigns.nvim",
+        cond = not(vim.g.vscode),
         event = "VeryLazy",
         config = true,
     },
     {
         "goolord/alpha-nvim",
+        cond = not(vim.g.vscode),
         event = "VimEnter",
         opts = function()
             local dashboard = require("alpha.themes.dashboard")
@@ -113,6 +118,7 @@ return {
     },
     {
         "rcarriga/nvim-notify",
+        cond = not(vim.g.vscode),
         keys = {
             {
                 "<leader>un",
