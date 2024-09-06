@@ -44,7 +44,7 @@ opt.title = true
 
 -- 启用undofile(打开文件时恢复未保存变动)
 opt.undofile = true
-opt.undodir = vim.fn.expand('$HOME/.nvim-undo')  --文件保存地址
+opt.undodir = vim.fn.expand('$HOME/.nvim-undo/')  --文件保存地址
 
 -- 禁止备份文件
 opt.swapfile = false

@@ -2,6 +2,7 @@ return {
     {
         "rhysd/accelerated-jk",
         vscode = true,
+        event = "VeryLazy",
         keys = {
             { "j", "<Plug>(accelerated_jk_gj)" },
             { "k", "<Plug>(accelerated_jk_gk)" },
@@ -9,6 +10,7 @@ return {
     },
     {   'akinsho/toggleterm.nvim',
         cond = not(vim.g.vscode),
+        event = "VeryLazy",
         keys = {
             {
                 "<A-\\>", "<cmd>ToggleTerm direction=vertical<CR>",
@@ -69,6 +71,7 @@ return {
     {
         "folke/persistence.nvim",
         cond = not(vim.g.vscode),
+        event = "VeryLazy",
         keys = {
             { "<leader>qs", [[<cmd>lua require("persistence").load()<cr>]] },
             { "<leader>ql", [[<cmd>lua require("persistence").load({ last = true})<cr>]] },
@@ -124,14 +127,15 @@ return {
         config = true,
     },
     {
-       "echasnovski/mini.comment",
-       cond = not(vim.g.vscode),
+        "echasnovski/mini.comment",
+        cond = not(vim.g.vscode),
         event = "VeryLazy",
         config = true,
     },
     {
         "folke/flash.nvim",
         vscode = true,
+        event = "VeryLazy",
         keys = {
             {
                 "s",
@@ -179,6 +183,7 @@ return {
     {
         "s1n7ax/nvim-window-picker",
         cond = not(vim.g.vscode),
+        event = "VeryLazy",
         opts = {
             filter_rules = {
                 include_current_win = true,
